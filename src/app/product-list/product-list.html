@@ -1,0 +1,11 @@
+<h2>Product List</h2>
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.id }} - {{ product.name }} - {{ product.price }} EGP
+  </li>
+</ul>
+
+<input [(ngModel)]="newName" placeholder="Product Name" />
+<input [(ngModel)]="newPrice" type="number" placeholder="Product Price" />
+
+<button (click)="addProduct()">Add Product</button>
